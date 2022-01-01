@@ -44,9 +44,9 @@ When a parameter is not required, you do not have to add  it the command.
 
 For example :
 
-This  command will provide data for the 3rd February for the hotels "Stay Japan Art Deco" and  "Le Meridien"
+This  command will provide data for the 3rd February for the hotels "Stay Japan Art Deco" and  "Le Meridien" for the tomorrow date (at the date you launch the script).
 
-`$ python scrapper.py --competitors  "Stay Japan Art Deco" "Le Meridien "  --checkin 2022-02-03`
+`$ python scrapper.py --competitors  "Stay Japan Art Deco" "Le Meridien "`
 
 
 # Help and more
