@@ -8,7 +8,7 @@ Start by running this command in your terminal to get the libraries so the code 
 
 To execute the script related to the scrapper, you can do as mentionned :
 
-`$ python scrappy.py --competitors <your_list_of_competitors> --checking <YYYY-MM-DD> --interval <number> --outdir <path_of_directory> --verbosity`
+`$ python scrappy.py --competitors <your_list_of_competitors> --datecheckin <YYYY-MM-DD> --interval <number> --outdir <path_of_directory> --verbosity`
 
 <your_list_of_competitors" should be provided as : "competiror 1" "competiror 2" "competiror 3" "competiror n" (there is no limit)
 
@@ -17,7 +17,7 @@ To execute the script related to the scrapper, you can do as mentionned :
 Logs will tell at which part is the scrapper. (Creating the url,generating file,saving, etc...)
 By default, logs are off. If you want them on, add the --verbosity paramater.
 
-`$ python scrapper.py --competitors  "apa hotel" "washington hotel tokyo"  --checkin 2022-01-05 --outdir "C:/Users/Documents/generated_file" --interval 2 --verbosity`
+`$ python scrapper.py --competitors  "apa hotel" "washington hotel tokyo"  --datecheckin 2022-01-05 --outdir "C:/Users/Documents/generated_file" --interval 2 --verbosity`
 
 This command will provide you data for APA Hotel and Washington Hotel Tokyo, for the dates of 2022-01-05 and 2022-01-06 since you provided the value 2 for the "interval" parameter. You will find the xlxs file saved under the path "C:/Users/Documents/generated_file".
 
