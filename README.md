@@ -22,11 +22,13 @@ By default, logs are off. If you want them on, add the --verbosity paramater.
 This command will provide you data for APA Hotel and Washington Hotel Tokyo, for the dates of 2022-01-05 and 2022-01-06 since you provided the value 2 for the "interval" parameter. You will find the xlxs file saved under the path "C:/Users/Documents/generated_file".
 
 
-For each parameter, there is an abbreviation, the same command is equivalent in this form : 
+For each parameter, there is an abbreviation.
+
+- This command :
 
 `$ python scrapper.py -c  "apa hotel" "washington hotel tokyo"  -d 2022-01-05 -o "C:/Users/Documents/generated_file"  -v`
 
-Is equivalent to the long version : 
+- Is equivalent to this one : 
 
 `$ python scrapper.py --competitors  "apa hotel" "washington hotel tokyo"  --datecheckin 2022-01-05 --outdir "C:/Users/Documents/generated_file"  --verbosity`
 
@@ -35,20 +37,19 @@ Is equivalent to the long version :
 
 # Usable Parameters
 
-| Parameter     | Utility                                                                                                                                                     | Required | Default           |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|-------------------|
-| `competitors` | Used to specify the name of the hotels you would like to scrap data about.                                                                                  | Yes      | None              |
-| `datacheckin` | Used to specify the checkin day.                                                                                                                            | No       | tomorrow          |
-| `outdir`      | Used to specify the directory of the output file.                                                                                                           | No       | current directory |
-| `interval`    | Used to specify the range in which the checkin date will fluctuate,  if interval=2 and checkin=2020-01-01, will provide data for 2020-01-01 and 2020-01-02. | No       | 1                 |
-| `verbosity`   | Use it if you want more logs during the process.                                                                                                            | No       | Off               |
+| Parameter       | Abbreviation | Utility                                                                                                                                                     | Required | Default           |
+|-----------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|-------------------|
+| `--competitors` | `-c`         | Used to specify the name of the hotels you would like to scrap data about.                                                                                  | Yes      | None              |
+| `--datacheckin` | `-d`         | Used to specify the checkin day.                                                                                                                            | No       | tomorrow          |
+| `--outdir`      | `-o`         | Used to specify the directory of the output file.                                                                                                           | No       | current directory |
+| `--interval`    | `-i`         | Used to specify the range in which the checkin date will fluctuate,  if interval=2 and checkin=2020-01-01, will provide data for 2020-01-01 and 2020-01-02. | No       | 1                 |
+| `--verbosity`   | `-v`         | Use it if you want more logs during the process.                                                                                                            | No       | Off               |
 
-
-When a parameter is not required, you do not have to add  it the command.
+* When a parameter is not required, you do not have to add  it the command.
 
 For example :
 
-This  command will provide data for the 3rd February for the hotels "Stay Japan Art Deco" and  "Le Meridien" for the tomorrow date (at the date you launch the script).
+- This  command will provide data for the 3rd February for the hotels "Stay Japan Art Deco" and  "Le Meridien" for the tomorrow date (at the date you launch the script).
 
 `$ python scrapper.py --competitors  "Stay Japan Art Deco" "Le Meridien "`
 
