@@ -49,7 +49,7 @@ python scrapper.py --help
 | `verbosity`   | Use it if you want more logs during the process.                                                                                                            | No       | Off               |
 
 
-When a parameter is not required, you do not have to add them to the command.
+When a parameter is not required, you do not have to add  it the command.
 
 For example :
 
