@@ -8,7 +8,7 @@ Start by running this command in your terminal to get the libraries so the code 
 
 To execute the script related to the scrapper, you can do as mentionned :
 
-`$ python scrappy.py --competitors <your_list_of_competitors> --datecheckin <YYYY-MM-DD> --interval <number> --outdir <path_of_directory> --verbosity`
+`$ python scrapper.py --competitors <your_list_of_competitors> --datecheckin <YYYY-MM-DD> --interval <number> --outdir <path_of_directory> --verbosity`
 
 <your_list_of_competitors" should be provided as : "competiror 1" "competiror 2" "competiror 3" "competiror n" (there is no limit)
 
@@ -25,6 +25,10 @@ This command will provide you data for APA Hotel and Washington Hotel Tokyo, for
 For each parameter, there is an abbreviation, the same command is equivalent in this form : 
 
 `$ python scrapper.py -c  "apa hotel" "washington hotel tokyo"  -d 2022-01-05 -o "C:/Users/Documents/generated_file"  -v`
+
+Is equivalent to the long version : 
+
+`$ python scrapper.py --competitors  "apa hotel" "washington hotel tokyo"  --datecheckin 2022-01-05 --outdir "C:/Users/Documents/generated_file"  --verbosity`
 
 
 
