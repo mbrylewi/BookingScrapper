@@ -1,5 +1,6 @@
 # Get started with the project
-Start by running this command in your terminal,
+Start by running this command in your terminal to get the libraries so the code would work.
+
 `$ pip install -r requirements.txt`
 
 
@@ -8,6 +9,9 @@ Start by running this command in your terminal,
 To execute the script related to the scrapper, you can do as mentionned :
 
 `$ python scrappy.py --competitors <your_list_of_competitors> --checking <YYYY-MM-DD> --interval <number> --outdir <path_of_directory> --verbosity`
+
+<your_list_of_competitors" should be provided as : "competiror 1" "competiror 2" "competiror 3" "competiror n" (there is no limit)
+
 
 # Execution of the command using the parser
 Logs will tell at which part is the scrapper. (Creating the url,generating file,saving, etc...)
