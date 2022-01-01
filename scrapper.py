@@ -36,10 +36,10 @@ parser.add_argument("-v","--verbosity",
 args = parser.parse_args()
 
   
-if args.competitors == '':
+if args.competitors is None:
   parser.error('No action performed, --competitors parameter required')
-
-core.scrapper_competitive(competitors=args.competitors,
+else:
+  core.scrapper_competitive(competitors=args.competitors,
                           checkin=args.datecheckin,
                           path=args.outdir,
                           interval=args.interval,
