@@ -27,15 +27,6 @@ For each parameter, there is an abbreviation, the same command is equivalent in 
 `$ python scrapper.py -c  "apa hotel" "washington hotel tokyo"  -d 2022-01-05 -o "C:/Users/Documents/generated_file"  -v`
 
 
-# Help and more
-
-If you want more informations about how use the scrapper, go and type :
-
-python scrapper.py -h 
-
-OR
-
-python scrapper.py --help
 
 
 # Usable Parameters
@@ -57,5 +48,15 @@ This  command will provide data for the 3rd February for the hotels "Stay Japan 
 
 `$ python scrapper.py --competitors  "Stay Japan Art Deco" "Le Meridien "  --checkin 2022-02-03`
 
+
+# Help and more
+
+If you want more informations about how use the scrapper, go and type :
+
+`$ python scrapper.py -h`
+
+OR
+
+`$ python scrapper.py --help`
 
 
