@@ -49,7 +49,7 @@ For each parameter, there is an abbreviation.
 
 For example :
 
-- This  command will provide data for the 3rd February for the hotels "Stay Japan Art Deco" and  "Le Meridien" for the tomorrow date (at the date you launch the script).
+- This  command will provide data for the hotels "Stay Japan Art Deco" and  "Le Meridien" for the tomorrow date (at the date you launch the script).
 
 `$ python scrapper.py --competitors  "Stay Japan Art Deco" "Le Meridien "`
 
