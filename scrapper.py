@@ -1,7 +1,6 @@
 import datetime
 import core
 import os
-
 import argparse
 
 today = datetime.date.today()
@@ -35,7 +34,8 @@ parser.add_argument("-v","--verbosity",
 
 args = parser.parse_args()
 
-  
+if args.competitors == '':
+  parser.error('No action performed, --competitors parameter required')
 
 
 core.scrapper_competitive(competitors=args.competitors,
@@ -43,3 +43,11 @@ core.scrapper_competitive(competitors=args.competitors,
                           path=args.outdir,
                           interval=args.interval,
                           is_verbose=args.verbosity)
+
+
+core.scrapper(destination='Tokyo Area',
+              checkin='2022-03-03',
+              path="C:\\Users\\kawaremu\\Desktop\\generated_files",
+              interval=2,
+              limit_page=2)
+
