@@ -65,3 +65,17 @@ OR
 `$ python scrapper.py --help`
 
 
+# Another function in the program
+
+If you would like to retrieve all data from all the pages given an area, go ahead and add this line of code to scrapper.py :
+
+`core.scrapper(destination='Tokyo Area',
+              checkin='2022-03-03',
+              path='C:\Users\kawaremu\Desktop\generated_files',
+              interval=2,
+              limit_page=2)`
+
+You can change the parameters, as for path. By default, the files are generated in the **current directory**.
+
+
+> You can limit the number of pages,if you do not, it will provide all the pages matching the request.
