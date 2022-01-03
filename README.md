@@ -69,7 +69,7 @@ OR
 
 ### The scrapper function 
 
-If you would like to retrieve all data from all the pages given an area, go ahead and add this line of code to scrapper.py :
+If you would like to retrieve all data from all the pages given an area, go ahead and add this line of code to `scrapper.py` :
 
 `core.scrapper(destination='Tokyo Area',
               checkin='2022-03-03',
@@ -88,6 +88,11 @@ After pasting this
 
 ### The simple_scrapper() function
 
-Without saving the file,  you can check quickly the tendency of an area providing the date, it will not generate a file but will show you in the console 
+Without saving the file,  you can check quickly the tendency of an area providing the date, it will not generate a file but will show you in the console.
 
+* For example, you can get **simply the name and the hotel price** (without the details on the rooms and commodities), by adding this line of code to the main file `scrapper.py`:
+
+`core.simple_scrapper(destination='Asakusa Area',
+                     checkin='2022-01-10',
+                     limit_page=10)`
 

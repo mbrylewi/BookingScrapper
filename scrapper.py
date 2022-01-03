@@ -45,9 +45,14 @@ core.scrapper_competitive(competitors=args.competitors,
                           is_verbose=args.verbosity)
 
 
+
 core.scrapper(destination='Tokyo Area',
               checkin='2022-03-03',
               path="C:\\Users\\kawaremu\\Desktop\\generated_files",
               interval=2,
               limit_page=2)
+
+core.simple_scrapper(destination='Asakusa Area',
+                     checkin='2022-01-10',
+                     limit_page=10)
 
