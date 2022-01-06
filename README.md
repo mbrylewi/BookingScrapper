@@ -61,7 +61,7 @@ For example :
 
 If you want more informations about how use the scrapper, go and type :
 
-`$ python scrapper.py -h`
+```bash $ python scrapper.py -h```
 
 OR
 
@@ -72,11 +72,13 @@ OR
 
 If you would like to retrieve all data from all the pages given an area, go ahead and add this line of code to scrapper.py :
 
-`core.scrapper(destination='Tokyo Area',
+```python 
+core.scrapper(destination='Tokyo Area',
               checkin='2022-03-03',
               path='C:\Users\kawaremu\Desktop\generated_files',
               interval=2,
-              limit_page=2)`
+              limit_page=2)
+```
 
 You can change the parameters, as for path. By default, the files are generated in the **current directory**.
 
