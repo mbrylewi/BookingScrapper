@@ -1,3 +1,6 @@
+# A booking scrapper
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
 # Get started with the project
 Start by running this command in your terminal to get the libraries so the code would work.
 
