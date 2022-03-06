@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from datetime import datetime, date, timedelta
 from sys import exit
 import pandas as pd
@@ -424,7 +426,7 @@ def scrapper(destination, checkin, path, is_verbose=False, checkout=None,interva
         number_of_pages = limit_page
 
         if is_verbose:
-            print(print("[~] Pages to fetch: {}".format(number_of_pages)))
+            print("[~] Pages to fetch: {}".format(number_of_pages))
 
         offset = 0
         hotels = {}
