@@ -24,7 +24,7 @@ my_options = Options()
 my_options.add_argument("--incognito")
 my_options.add_argument("--ignore-certificate-errors")
 
-def create_url(city, datein, dateout=None, offset=0, people=2, no_sleep=1, currency='JPY'):
+def create_url(city, datein, dateout=None, offset=0, people=2, no_sleep=1, currency='EUR'):
     # Checking the format
     format = "%Y-%m-%d"
     try:
@@ -58,7 +58,7 @@ def create_url(city, datein, dateout=None, offset=0, people=2, no_sleep=1, curre
     return url
 
 
-def next_page(booking_url, input_offset, currency='JPY'):
+def next_page(booking_url, input_offset, currency='EUR'):
     # Firt, the standard link we got from searching without dates is trimmed of "&", we grab those values and separate them into a format key=value
     trimmed = booking_url.split('&')
     join_trimmed = '\n'.join([item for item in trimmed])
@@ -74,13 +74,13 @@ def next_page(booking_url, input_offset, currency='JPY'):
         joined.append('{}={}'.format(key, value))
 
     final_link = '&'.join(joined)
-    # Princes are in DZA, so let's get them in JPY
+    # Princes are in DZA, so let's get them in EUR
     final_link = final_link+'&selected_currency={}'.format(currency)
     return final_link+'#map_closed'+'&top_ufis=1'
 
 
 
-def format_url(booking_url, datein, dateout=None, currency='JPY',no_sleep=1):
+def format_url(booking_url, datein, dateout=None, currency='EUR',no_sleep=1):
     # Firt, the standard link we got from searching without dates is trimmed of "&", we grab those values and separate them into a format key=value
     trimmed = booking_url.split('&')
     # Checking the format
